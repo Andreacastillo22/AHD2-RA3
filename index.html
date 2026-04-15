@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Sistema de Citas</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/css/select2.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <div class="contenedor" data-aos="zoom-in">
+        <h2>Clínica Médica</h2>
+        <form id="formRegistro">
+            <label>Nombre del Paciente:</label>
+            <input type="text" id="nombre" placeholder="Escriba aquí...">
+
+            <label>Fecha de Cita:</label>
+            <input type="text" id="fecha" placeholder="Seleccionar...">
+
+            <label>Horarios disponibles:</label>
+            <select id="hora">
+                <option value="">-- Elija una fecha --</option>
+            </select>
+
+            <label>Tipo de Servicio:</label>
+            <select id="servicio" style="width:100%">
+                <option value=""></option>
+                <option value="1">Consulta General</option>
+                <option value="2">Consulta Especializada</option>
+                <option value="3">Servicios de Diagnóstico</option>
+                <option value="4">Cuidados Crónicos</option>
+            </select>
+
+            <button type="submit" class="btn-registrar">Registrar Cita</button>
+        </form>
+    </div>
+
+    <div id="listaCitas">
+
+        <hr>
+    </div>
+
+    <script src="JS/script.js"></script>
+
+</body>
+
+</html>
